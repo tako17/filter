@@ -1,0 +1,91 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+body {
+  font-size: 13px;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+.filter {
+  max-width: 300px;
+  width: 30%;
+  background-color: #2e3338;
+  border-radius: 15px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+.state li {
+  background-color: #f2f2f2;
+}
+
+.dropdown li span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+
+li span::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #576367;
+  border-radius: 2px;
+}
+[type="checkbox"]:checked ~ span::after {
+  content: url("img/Path\ 7136.svg");
+  color: #e2b62d;
+  border: 0px;
+
+  width: 15px;
+  height: 15px;
+}
+[type="checkbox"]:checked ~ span {
+  background-color: #ffffff;
+  color: #e2b62d;
+}
+
+.filter-submenu h3::before {
+  content: url("img/phonelink.svg");
+  margin-right: 19px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.filter-submenu.color h3::before {
+  content: url("img/color.svg");
+}
+.filter-submenu.category h3::before {
+  content: "";
+}
+
+.filter-submenu::after {
+  content: url("img/down.svg");
+}
+
+.filter-submenu h3 {
+  vertical-align: middle;
+}
+.category h3 {
+  display: inline-block;
+}
+
+li.filter-submenu {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2b62d;
+}
+li.filter-submenu:hover {
+  cursor: pointer;
+}
+
+.remove {
+  display: none;
+}
