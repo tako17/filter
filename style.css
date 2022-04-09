@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/bpg_mrgvlovani_caps_2010.ttf);
+  src: url('fonts/bpg_mrgvlovani_caps_2010.ttf');
 }
 body {
   font-size: 13px;
@@ -12,6 +12,7 @@ body {
   width: 30%;
   background-color: #2e3338;
   border-radius: 15px;
+  margin-bottom: 400px;
 }
 
 [type="checkbox"] {
@@ -68,6 +69,7 @@ li span::after {
   content: url("img/down.svg");
 }
 
+
 .filter-submenu h3 {
   vertical-align: middle;
 }
@@ -88,4 +90,28 @@ li.filter-submenu:hover {
 
 .remove {
   display: none;
+}
+
+li.up,li.up2,li.up3{
+    background-color: #2E3338;
+    color: #E2B62D;
+    /* border-bottom: 1px solid ; */
+  
+    
+}
+.border,.border2{
+   max-width: 260px;
+   width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #4F565E;
+}
+li.up::after,li.up2::after,li.up3::after{
+content: url("img/downsecond.svg");
+}
+li.filter-submenu.color.up2 h3::before{
+    content: url('img/colorsecond.svg');
+}
+li.filter-submenu.Condition.up3 h3::before{
+    content: url('img/phonelinksecond.svg');
 }
